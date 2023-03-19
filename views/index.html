@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon-Speedrunner API</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Hackathon-Speedrunner API</h1>
+    <h2>All these paths are valid only for the allowed origins</h2>
+    <div>
+        <ul>
+            <li>/users <br>
+                    GET <br>
+                    POST(need: username* password* roles active) <br>
+                    PATCH(need: username* password* roles* active* id*) <br>
+                    DELETE(need: id*)</li>
+            <li>/auth (need: to be a user, will get automatically authorised by jwt, will get an access token: (15m expiry) and a refresh token: (7d expiry))<br>
+                    POST(need: username* password*) to login
+                      </li>
+            <li>/auth/refresh <br>
+                    GET(need: cookie => refresh token from jwt)</li>
+            <li>/auth/logout (need: cookie => refresh token from jwt)<br>
+                    POST(need: cookie => refresh token from jwt)</li>
+            <li>/mlh <br>
+                    GET(need: auth)</li>            
+            <li>/devpost <br>
+                    GET(need: auth)</li>
+            <li>/posts (need: auth)<br>
+                    GET (need: auth)<br>
+                    POST (need: user*, title*, text*, date*, location*, prize*, imagesrc)<br>
+                    PATCH (need: id*, user*, title*, text*, date*, location*, prize*, imagesrc*, completed*)<br>
+                    DELETE (need: id*)<br>
+                    </li>            
+        </ul>
+    </div>
+</body>
+</html>
