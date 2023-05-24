@@ -15,6 +15,8 @@ npm install
 
 npm start
 
+**For now you can use Postman to check it out, frontend coming very soon in React JS!
+
 ## What It Does: 
 Built a node and express js server which web scrapes data from a number of hackathon sites and displays them at one place in real-time, has JWT(Json Web Token) for auth and users can log in to upload their
 own hackathons or the hackathons that are not tracked by our server! We are using Cloudinary and Multer for image uploads! There is also a team-building section where
