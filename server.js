@@ -10,7 +10,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/dbConn");
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 connectDB();
 
@@ -21,12 +21,12 @@ app.use(cookieParser());
 app.use("/", express.static(path.join(__dirname, "public")));
 
 app.use("/", require("./routes/root"));
-app.use("/auth", require("./routes/authRoutes"))
-app.use('/users', require('./routes/userRoutes'))
-app.use('/posts', require('./routes/postRoutes'))
-app.use('/comments',require("./routes/commentRoutes"));
-app.use('/mlh', require('./routes/mlhRoutes'))
-app.use('/devpost', require('./routes/devpostRoutes'))
+app.use("/auth", require("./routes/authRoutes"));
+app.use("/users", require("./routes/userRoutes"));
+app.use("/posts", require("./routes/postRoutes"));
+app.use("/comments", require("./routes/commentRoutes"));
+app.use("/mlh", require("./routes/mlhRoutes"));
+app.use("/devpost", require("./routes/devpostRoutes"));
 
 app.all("*", (req, res) => {
   res.status(404);
@@ -41,15 +41,17 @@ app.all("*", (req, res) => {
 
 app.use(errorHandler);
 
-mongoose.connection.once('open',() => {
-    console.log('Connected to MongoDB');
-    app.listen(PORT, () => {
-        console.log(`Server running on port ${PORT}`);
-      });
-})
+mongoose.connection.once("open", () => {
+  console.log("Connected to MongoDB");
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+});
 
-mongoose.connection.on('error', err => {
-    console.log(err)
-    logEvents(`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`, 'mongoErrLog.log')
-})
-
+mongoose.connection.on("error", (err) => {
+  console.log(err);
+  logEvents(
+    `${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`,
+    "mongoErrLog.log"
+  );
+});
