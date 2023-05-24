@@ -1,6 +1,6 @@
 ## Get Started 
-make a .env file inside the config folder
-    and enter the following details:
+Make a .env file inside the config folder\
+    and enter the following details:\
         PORT\
         DATABASE_URI\
         CLOUD_NAME\
