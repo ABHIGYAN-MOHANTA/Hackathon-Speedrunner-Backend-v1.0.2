@@ -1,13 +1,13 @@
 ## Get Started 
 make a .env file inside the config folder
     and enter the following details:
-        PORT
-        DATABASE_URI
-        CLOUD_NAME
-        API_KEY
-        API_SECRET
-        ACCESS_TOKEN_SECRET
-        REFRESH_TOKEN_SECRET
+        PORT\
+        DATABASE_URI\
+        CLOUD_NAME\
+        API_KEY\
+        API_SECRET\
+        ACCESS_TOKEN_SECRET\
+        REFRESH_TOKEN_SECRET\
 
 In the config folder inside the allowedOrigins.js, enter the url of the frontend website where you want to access it
 
@@ -17,7 +17,7 @@ npm start
 
 **For now you can use Postman to check it out, frontend coming very soon in React JS!
 
-## What It Does: 
+## What It Does
 Built a node and express js server which web scrapes data from a number of hackathon sites and displays them at one place in real-time, has JWT(Json Web Token) for auth and users can log in to upload their
 own hackathons or the hackathons that are not tracked by our server! We are using Cloudinary and Multer for image uploads! There is also a team-building section where
 students can chat with each other and form teams! And all the necessary details are encrypted and stored in a Mongo DB database using Mongoose to make schema!
