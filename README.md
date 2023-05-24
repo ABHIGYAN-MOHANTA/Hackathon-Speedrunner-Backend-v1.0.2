@@ -7,7 +7,7 @@ Make a .env file inside the config folder\
         API_KEY\
         API_SECRET\
         ACCESS_TOKEN_SECRET\
-        REFRESH_TOKEN_SECRET\
+        REFRESH_TOKEN_SECRET
 
 In the config folder inside the allowedOrigins.js, enter the url of the frontend website where you want to access it
 
