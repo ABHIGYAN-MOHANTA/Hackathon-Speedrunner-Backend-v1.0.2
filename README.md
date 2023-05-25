@@ -18,7 +18,8 @@ npm start
 **For now you can use Postman to check it out, frontend coming very soon in React JS!
 
 ## What It Does
-Built a node and express js server which web scrapes data from a number of hackathon sites and displays them at one place in real-time, has JWT(Json Web Token) for auth and users can log in to upload their
+Basically built a one stop solution for tracking all hackathons and team building!
+It is a node and express js server which web scrapes data from a number of hackathon sites and displays them at one place in real-time, has JWT(Json Web Token) for auth and users can log in to upload their
 own hackathons or the hackathons that are not tracked by our server! We are using Cloudinary and Multer for image uploads! There is also a team-building section where
 students can chat with each other and form teams! And all the necessary details are encrypted and stored in a Mongo DB database using Mongoose to make schema!
 
