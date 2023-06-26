@@ -18,7 +18,7 @@ const getAllPosts = asyncHandler(async (req, res) => {
     // Add username to each post before sending the response
     const postsWithUser = await Promise.all(posts.map(async (post) => {
         const user = await User.findById(post.user).lean().exec()
-        return { ...post, user: user }
+        return { ...post, user: { ...user, password: undefined } }
     }))
 
     res.json(postsWithUser)
