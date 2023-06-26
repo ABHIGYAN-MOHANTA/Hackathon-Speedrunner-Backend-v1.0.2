@@ -53,14 +53,12 @@ const getAllPosts = asyncHandler(async (req, res) => {
       // console.log(logos[3]);
 
       const result = eventnames.map((name, index) => ({
-        [name]: {
-          eventname: eventnames[index],
-          eventdate: eventdates[index],
-          eventlocation: eventlocations[index],
-          eventnote: eventnotes[index],
-          imageurl: imageurls[index],
-          logo: logos[index],
-        },
+        eventname: eventnames[index],
+        eventdate: eventdates[index],
+        eventlocation: eventlocations[index],
+        eventnote: eventnotes[index],
+        imageurl: imageurls[index],
+        logo: logos[index],
       }));
 
       res.json(result);
