@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const postSchema = new mongoose.Schema(
   {
@@ -31,13 +31,17 @@ const postSchema = new mongoose.Schema(
       default:
         "https://glueup.com/storage/app/uploads/public/5f3/652/179/5f365217936eb474613534.gif",
     },
+    cloudinaryId: {
+      type: String,
+      require: true,
+    },
     completed: {
       type: Boolean,
       default: false,
     },
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 );
 
