@@ -1,39 +1,79 @@
-## Get Started 
-Make a .env file inside the config folder\
-    and enter the following details:\
-        PORT\
-        DATABASE_URI\
-        CLOUD_NAME\
-        API_KEY\
-        API_SECRET\
-        ACCESS_TOKEN_SECRET\
-        REFRESH_TOKEN_SECRET
+# HackathonSpeedrunner - Backend
 
-In the config folder inside the allowedOrigins.js, enter the url of the frontend website where you want to access it
+For more details and updates, please check out the [YouTube video](https://www.youtube.com/watch?v=Q0Yls0L_T8g&t=28s).
 
-npm install
+## Getting Started
 
-npm start
+To get started with the HackathonSpeedrunner Backend, please follow these steps:
 
-** Please check out how it works at: https://www.youtube.com/watch?v=Q0Yls0L_T8g&t=28s
+1. Clone the repository by running the following command in your terminal:
+   ```
+   git clone https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2.git
+   ```
+
+2. Install the project dependencies by running the following command in the project directory:
+   ```
+   npm install
+   ```
+
+3. Start the development server by running the following command:
+   ```
+   npm start
+   ```
+
+4. Create a `.env` file inside the `config` folder and enter the following details:
+   ```
+   PORT
+   DATABASE_URI
+   CLOUD_NAME
+   API_KEY
+   API_SECRET
+   ACCESS_TOKEN_SECRET
+   REFRESH_TOKEN_SECRET
+   ```
+
+5. In the `config` folder, inside the `allowedOrigins.js` file, enter the URL of the frontend website where you want to access the backend.
+
+That's it! You should now have the HackathonSpeedrunner Backend up and running locally on your machine.
 
 ## What It Does
-Basically built a one stop solution for tracking all hackathons and team building!
-It is a node and express js server which web scrapes data from a number of hackathon sites and displays them at one place in real-time, has JWT(Json Web Token) for auth and users can log in to upload their
-own hackathons or the hackathons that are not tracked by our server! We are using Cloudinary and Multer for image uploads! There is also a team-building section where
-students can chat with each other and form teams! And all the necessary details are encrypted and stored in a Mongo DB database using Mongoose to make schema!
 
-## What I learned
-I learned the Model View Controller architecture of writing code! Apart from that there were a lot of errors, in web scrapping, since devpost is a client-side rendered website, so Cherrio was unable to web scrape it! I was stuck in there for a while, figuring out what went wrong! Later when I found out what the issue was, I researched what could be used to handle client side rendered pages, and puppeteer came up! I learned puppeteer to handle it and finally made it work! I also learned about JWT, since it was my first time implementing it! Apart from that I learned about image uploads using Cloudinary and Multer! There were also some errors for using axios, since axios headers were later blocked by a number of sites, I was stuck in there for a while, but later figured it out and replaced it with fetch! I also learnt how to handle multi-form data, since users will be uploading an image and details of the hackathon to the same post request! That took some time to figure out and when it was done, I was greatly overjoyed! 
+The HackathonSpeedrunner Backend is a Node.js and Express.js server that serves as the backend for the HackathonSpeedrunner project. It provides a one-stop solution for tracking hackathons and team building. The backend web scrapes data from various hackathon sites in real-time and displays them in a centralized location. It also implements JWT (Json Web Token) for authentication, allowing users to log in and upload their own hackathons or hackathons that are not tracked by the server. Image uploads are handled using Cloudinary and Multer. Additionally, there is a team-building section where students can chat with each other and form teams. All necessary details are encrypted and stored in a MongoDB database using Mongoose for schema management.
 
-![Screenshot from 2023-07-13 05-45-56](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/2d7aa60a-6796-4deb-b31f-6c66654a3c11)
-![Screenshot from 2023-07-13 05-46-08](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/1a780c9c-0b6d-45e7-8280-a226b27f394c)
-![Screenshot from 2023-07-13 05-46-17](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/36bcbe13-84b2-44e7-94fb-53442aa2969c)
-![Screenshot from 2023-07-13 05-46-48](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/897ae292-b16e-4f55-a70d-035ffd5cfb8c)
-![Screenshot from 2023-07-13 05-46-58](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/dc42d70f-526b-4709-b2da-c4ce81418082)
-![Screenshot from 2023-07-13 05-47-17](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/08b47ada-fd54-49e1-849a-885517c45f83)
-![Screenshot from 2023-07-13 05-47-23](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/6683c54f-b401-4932-9c20-c8984f86c76b)
-![Screenshot from 2023-07-13 05-47-31](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/cbacb329-6883-4c6a-b6b4-2d4dffd19ff6)
-![Screenshot from 2023-07-13 05-48-33](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/b7a27ea8-5aa3-426c-b8a0-3674440e874d)
-![Screenshot from 2023-07-13 05-48-55](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/29117dad-ecc8-478b-a742-dde7fb48978e)
-![Screenshot from 2023-07-13 05-49-32](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/be17b0ae-ad8c-48bf-b229-e333f30c0bfa)
+## What I Learned
+
+During the development of the HackathonSpeedrunner Backend, I gained valuable knowledge and experience in the following areas:
+
+- Model-View-Controller (MVC) architecture: I learned how to structure code using the MVC pattern, separating concerns and improving code maintainability.
+- Web scraping challenges: I encountered difficulties when web scraping Devpost due to its client-side rendering. I researched and discovered Puppeteer, which enabled me to handle client-side rendered pages successfully.
+- JWT implementation: It was my first time implementing JWT for authentication. I learned about the concepts and best practices for using JWT in secure and efficient ways.
+- Image uploads using Cloudinary and Multer: I acquired knowledge on handling image uploads and integration with third-party services like Cloudinary and Multer.
+- Troubleshooting and error handling: Throughout the development process, I faced challenges with libraries like Axios and learned how to troubleshoot issues and find alternative solutions, such as using the Fetch API as a replacement.
+- Handling multi-form data: I learned how to handle and process multipart form data, as users would be uploading both images and hackathon details in the same request.
+
+## Screenshots
+
+Here are some screenshots showcasing the HackathonSpeedrunner Backend in action:
+
+![Screenshot 1](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/2d7aa60a-6796-4deb-b31f-6c66654a3c11)
+![Screenshot 2](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/1a780c9c-0b6d-45e7-8280-a226b27f394c)
+![Screenshot 3](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/36bcbe13-84b2-44e7-94fb-53442aa2969c)
+![Screenshot 4](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/897ae292-b16e-4f55-a70d-035ffd5cfb8c)
+![Screenshot 5](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/dc42d70f-526b-4709-b2da-c4ce81418082)
+![Screenshot 6](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/08b47ada-fd54-49e1-849a-885517c45f83)
+![Screenshot 7](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/6683c54f-b401-4932-9c20-c8984f86c76b)
+![Screenshot 8](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/cbacb329-6883-4c6a-b6b4-2d4dffd19ff6)
+![Screenshot 9](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/b7a27ea8-5aa3-426c-b8a0-3674440e874d)
+![Screenshot 10](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/29117dad-ecc8-478b-a742-dde7fb48978e)
+![Screenshot 11](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/be17b0ae-ad8c-48bf-b229-e333f30c0bfa)
+
+Feel free to explore the project and contribute to its development!
+
+For more details and updates, please check out the [YouTube video](https://www.youtube.com/watch?v=Q0Yls0L_T8g&t=28s).
+
+If you encounter any issues or have any questions regarding the HackathonSpeedrunner Backend project, please feel free to [open an issue](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/issues) on GitHub. We'll be happy to assist you!
+
+Happy hacking!
+```
+
+You can copy the above Markdown content and save it in a file named `README.md` to use it as the README file for your GitHub project.
