@@ -1,5 +1,5 @@
 # HackathonSpeedrunner - Backend
-Check out the actual project in this youtube video: https://www.youtube.com/watch?v=Q0Yls0L_T8g&t=28s
+Check out the actual project in this youtube video: [Youtube](https://www.youtube.com/watch?v=Q0Yls0L_T8g&t=28s)
 ## Getting Started
 
 To get started with the HackathonSpeedrunner Backend, please follow these steps:
