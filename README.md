@@ -1,7 +1,5 @@
 # HackathonSpeedrunner - Backend
 
-For more details and updates, please check out the [YouTube video](https://www.youtube.com/watch?v=Q0Yls0L_T8g&t=28s).
-
 ## Getting Started
 
 To get started with the HackathonSpeedrunner Backend, please follow these steps:
@@ -65,15 +63,26 @@ Here are some screenshots showcasing the HackathonSpeedrunner Backend in action:
 ![Screenshot 8](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/cbacb329-6883-4c6a-b6b4-2d4dffd19ff6)
 ![Screenshot 9](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/b7a27ea8-5aa3-426c-b8a0-3674440e874d)
 ![Screenshot 10](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/29117dad-ecc8-478b-a742-dde7fb48978e)
-![Screenshot 11](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/assets/110360901/be17b0ae-ad8c-48bf-b229-e333f30c0bfa)
 
 Feel free to explore the project and contribute to its development!
 
+## Contributing
+
+We welcome contributions from the open-source community to improve the HackathonSpeedrunner Backend project. If you'd like to contribute, please follow these steps:
+
+1. Fork the repository on GitHub.
+2. Create a new branch with a descriptive name for your feature or bug fix.
+3. Make your changes and commit them with clear commit messages.
+4. Push your changes to your forked repository.
+5. Submit a pull request, explaining the changes you've made and why they should be merged.
+
+Please ensure that you adhere to our code style guidelines and write appropriate tests for your changes.
+
 For more details and updates, please check out the [YouTube video](https://www.youtube.com/watch?v=Q0Yls0L_T8g&t=28s).
 
-If you encounter any issues or have any questions regarding the HackathonSpeedrunner Backend project, please feel free to [open an issue](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/issues) on GitHub. We'll be happy to assist you!
+If you encounter any issues or have any questions regarding the HackathonSpeedrunner Backend project, please feel free to [open an issue](https://github.com/ABHIGYAN-MOHANTA/Hackathon-Speedrunner-Backend-v1.0.2/issues) on GitHub. We'll
+
+ be happy to assist you!
 
 Happy hacking!
 ```
-
-You can copy the above Markdown content and save it in a file named `README.md` to use it as the README file for your GitHub project.
