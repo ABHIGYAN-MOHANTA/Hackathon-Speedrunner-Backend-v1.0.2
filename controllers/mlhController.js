@@ -8,7 +8,7 @@ const pretty = require("pretty");
 // @route GET /mlh
 // @access Private
 const getAllPosts = asyncHandler(async (req, res) => {
-  fetch("https://mlh.io/seasons/2023/events")
+  fetch("https://mlh.io/seasons/2024/events")
     .then((response) => response.text())
     .then((html) => {
       // Use Cheerio to scrape the HTML
